@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.32002.185
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "하디_바인베르크_시뮬래이션", "하디_바인베르크_시뮬래이션.csproj", "{D44ACDB9-CFA7-4B27-9C5C-67D472D841B2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D44ACDB9-CFA7-4B27-9C5C-67D472D841B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D44ACDB9-CFA7-4B27-9C5C-67D472D841B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D44ACDB9-CFA7-4B27-9C5C-67D472D841B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D44ACDB9-CFA7-4B27-9C5C-67D472D841B2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F80B921C-C584-463F-B7D6-92EBC2B0C3B3}
+	EndGlobalSection
+EndGlobal

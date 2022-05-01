@@ -1,0 +1,16 @@
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\bin\Debug\net5.0\하디_바인베르크_시뮬래이션.exe
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\bin\Debug\net5.0\하디_바인베르크_시뮬래이션.deps.json
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\bin\Debug\net5.0\하디_바인베르크_시뮬래이션.runtimeconfig.json
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\bin\Debug\net5.0\하디_바인베르크_시뮬래이션.runtimeconfig.dev.json
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\bin\Debug\net5.0\하디_바인베르크_시뮬래이션.dll
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\bin\Debug\net5.0\ref\하디_바인베르크_시뮬래이션.dll
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\bin\Debug\net5.0\하디_바인베르크_시뮬래이션.pdb
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\obj\Debug\net5.0\하디_바인베르크_시뮬래이션.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\obj\Debug\net5.0\하디_바인베르크_시뮬래이션.AssemblyInfoInputs.cache
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\obj\Debug\net5.0\하디_바인베르크_시뮬래이션.AssemblyInfo.cs
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\obj\Debug\net5.0\하디_바인베르크_시뮬래이션.csproj.CoreCompileInputs.cache
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\obj\Debug\net5.0\하디_바인베르크_시뮬래이션.dll
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\obj\Debug\net5.0\ref\하디_바인베르크_시뮬래이션.dll
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\obj\Debug\net5.0\하디_바인베르크_시뮬래이션.pdb
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\obj\Debug\net5.0\하디_바인베르크_시뮬래이션.genruntimeconfig.cache
+C:\Users\chomi\source\repos\하디_바인베르크_시뮬래이션\obj\Debug\net5.0\하디_바인베르크_시뮬래이션.csproj.AssemblyReference.cache

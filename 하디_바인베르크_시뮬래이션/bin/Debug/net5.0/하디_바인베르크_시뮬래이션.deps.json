@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "하디_바인베르크_시뮬래이션/1.0.0": {
+        "runtime": {
+          "하디_바인베르크_시뮬래이션.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "하디_바인베르크_시뮬래이션/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
