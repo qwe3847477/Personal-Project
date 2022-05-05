@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,11 +26,12 @@ namespace 하디_바인베르크_시뮬레이션
             Console.WriteLine("Male 개체값을 입력하시오. (AA Aa aa)");
             Console.WriteLine("ex예시) 25 5 10\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
             Input(ref Male_AA_num, ref Male_Aa_num, ref Male_aa_num);
+            Console.Clear();
 
-            Console.WriteLine();
             Console.WriteLine("Female 개체값을 입력하시오. (AA Aa aa)");
             Console.WriteLine("ex예시) 25 5 10\nㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
             Input(ref Female_AA_num, ref Female_Aa_num, ref Female_aa_num);
+            Console.Clear();
 
             //사망률 입력 나중에 구현하자!!!
 
@@ -39,7 +40,7 @@ namespace 하디_바인베르크_시뮬레이션
                        ref Male_List, ref Female_List);
 
             Console.WriteLine("\nWaiting...");
-            Thread.Sleep(1000); //1초 대기
+            //Thread.Sleep(1000); //1초 대기
 
             int index = 0;
 
@@ -65,18 +66,22 @@ namespace 하디_바인베르크_시뮬레이션
                         aa++;
                 }
 
-                if (AA + Aa + aa == 0)
-                    break;
-
                 Console.WriteLine();
                 Console.WriteLine("AA Aa aa");
                 Console.WriteLine($"{AA},{Aa},{aa}    {index}번쨰");
                 Console.WriteLine("A인자의 갯수 = {0}    ({1}%)", AA * 2 + Aa, (AA * 2 + Aa) / (2 * (AA + Aa + aa)) * 100);
                 Console.WriteLine("a인자의 갯수 = {0}    ({1}%)", aa * 2 + Aa, (aa * 2 + Aa) / (2 * (AA + Aa + aa)) * 100);
+
+                Console.WriteLine("AA = {0}    ({1}%)", AA, AA / (AA + Aa + aa) * 100);
+                Console.WriteLine("Aa = {0}    ({1}%)", Aa, Aa / (AA + Aa + aa) * 100);
+                Console.WriteLine("aa = {0}    ({1}%)", aa, aa / (AA + Aa + aa) * 100);
+
                 Console.Write(Male_List.Count); Console.WriteLine("    " + Female_List.Count);
                 Console.WriteLine("ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ");
                 Console.WriteLine();
 
+                if (AA + Aa + aa == 0)
+                    break;
             }
         }
 
@@ -130,29 +135,32 @@ namespace 하디_바인베르크_시뮬레이션
             List<string> tmp_Male_LIst = new List<string>();
             List<string> tmp_Female_LIst = new List<string>();
 
-            List<int> Male_Random_List = Enumerable.Range(1,Male_LIst.Count).ToList();
-            List<int> Female_Random_List= Enumerable.Range(1,Female_List.Count).ToList();
+            List<int> Male_Random_List = Enumerable.Range(0,Male_LIst.Count).ToList();
+            List<int> Female_Random_List= Enumerable.Range(0,Female_List.Count).ToList();
 
             Random random = new Random();
             while (0 < Male_Random_List.Count && 0 < Female_Random_List.Count)
             {
-                int Male_Index = random.Next(Male_Random_List.Count); // 꺼낼 번호를 랜덤하게 선택합니다.
+                int Male_Index = random.Next(Male_Random_List.Count); // 꺼낼 번호를 랜덤하게 선택
                 int Female_Index = random.Next(Female_Random_List.Count);
 
-                int Male_Random_Num = Male_Random_List[Male_Index]; // 중복되지 않는 번호를 꺼내왔으니 이것을 사용하세요.
+                int Male_Random_Num = Male_Random_List[Male_Index]; //숫자 추출
                 int Female_Random_Num = Female_Random_List[Female_Index];
 
-                Female_Random_List.RemoveAt(Female_Index);     // 중복되지 않도록 제거합니다.        
-                Male_Random_List.RemoveAt(Male_Index);
+                Male_Random_List.RemoveAt(Male_Index);          // 중복되지 않도록 제거 
+                Female_Random_List.RemoveAt(Female_Index);           
+                
 
                 for (int i = 0; i < Des_Count; i++)
                 {
                     int Des_sex = random.Next(2); // 0이면 수컷,    1이면 암컷
                     if (Des_sex == 0)
-                        tmp_Male_LIst.Add(Des_Gene(Male_LIst[Male_Index], Female_List[Female_Index]));
+                        tmp_Male_LIst.Add(Des_Gene(Male_LIst[Male_Random_Num], Female_List[Female_Random_Num]));
                     else if (Des_sex == 1)
-                        tmp_Female_LIst.Add(Des_Gene(Male_LIst[Male_Index], Female_List[Female_Index]));
+                        tmp_Female_LIst.Add(Des_Gene(Male_LIst[Male_Random_Num], Female_List[Female_Random_Num]));
                 }
+
+
 
             }
             Male_LIst.AddRange(tmp_Male_LIst);
@@ -169,7 +177,7 @@ namespace 하디_바인베르크_시뮬레이션
             _return += c[random.Next(2)];
 
             c = Female_Gene.ToCharArray();
-            _return+= c[random.Next(2)];
+            _return += c[random.Next(2)];
 
             if (_return == "aA")
                 _return = "Aa";
@@ -179,10 +187,10 @@ namespace 하디_바인베르크_시뮬레이션
 
         static void Death(ref List<string> Male_List, ref List<string> Female_LIst, int Death_rate)
         {
-            for(int i=0; i<Male_List.Count;)
+            for (int i = 0; i < Male_List.Count;)
             {
                 Random random = new Random();
-                if (random.Next(100) < Death_rate)          
+                if (random.Next(100) < Death_rate)
                     Male_List.RemoveAt(i);
                 else
                     i++;
