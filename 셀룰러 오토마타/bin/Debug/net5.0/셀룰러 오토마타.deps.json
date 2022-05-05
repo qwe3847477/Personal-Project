@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "셀룰러 오토마타/1.0.0": {
+        "runtime": {
+          "셀룰러 오토마타.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "셀룰러 오토마타/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

@@ -1,0 +1,16 @@
+C:\Users\chomi\source\repos\셀룰러 오토마타\bin\Debug\net5.0\셀룰러 오토마타.exe
+C:\Users\chomi\source\repos\셀룰러 오토마타\bin\Debug\net5.0\셀룰러 오토마타.deps.json
+C:\Users\chomi\source\repos\셀룰러 오토마타\bin\Debug\net5.0\셀룰러 오토마타.runtimeconfig.json
+C:\Users\chomi\source\repos\셀룰러 오토마타\bin\Debug\net5.0\셀룰러 오토마타.runtimeconfig.dev.json
+C:\Users\chomi\source\repos\셀룰러 오토마타\bin\Debug\net5.0\셀룰러 오토마타.dll
+C:\Users\chomi\source\repos\셀룰러 오토마타\bin\Debug\net5.0\ref\셀룰러 오토마타.dll
+C:\Users\chomi\source\repos\셀룰러 오토마타\bin\Debug\net5.0\셀룰러 오토마타.pdb
+C:\Users\chomi\source\repos\셀룰러 오토마타\obj\Debug\net5.0\셀룰러 오토마타.csproj.AssemblyReference.cache
+C:\Users\chomi\source\repos\셀룰러 오토마타\obj\Debug\net5.0\셀룰러 오토마타.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\chomi\source\repos\셀룰러 오토마타\obj\Debug\net5.0\셀룰러 오토마타.AssemblyInfoInputs.cache
+C:\Users\chomi\source\repos\셀룰러 오토마타\obj\Debug\net5.0\셀룰러 오토마타.AssemblyInfo.cs
+C:\Users\chomi\source\repos\셀룰러 오토마타\obj\Debug\net5.0\셀룰러 오토마타.csproj.CoreCompileInputs.cache
+C:\Users\chomi\source\repos\셀룰러 오토마타\obj\Debug\net5.0\셀룰러 오토마타.dll
+C:\Users\chomi\source\repos\셀룰러 오토마타\obj\Debug\net5.0\ref\셀룰러 오토마타.dll
+C:\Users\chomi\source\repos\셀룰러 오토마타\obj\Debug\net5.0\셀룰러 오토마타.pdb
+C:\Users\chomi\source\repos\셀룰러 오토마타\obj\Debug\net5.0\셀룰러 오토마타.genruntimeconfig.cache
